@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 public class GeminiService {
     private final Client client;
 
-    public GeminiService(@Value("${gemini.api.key}") String apiKey) {
+    public GeminiService(@Value("${GEMINI_API_KEY}") String apiKey) {
         this.client = Client.builder().apiKey(apiKey).build();
     }
 

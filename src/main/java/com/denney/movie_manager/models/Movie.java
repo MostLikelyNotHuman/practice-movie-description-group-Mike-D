@@ -12,6 +12,7 @@ public class Movie {
     private int id;
     private String title;
     private int reviewStars;
+    private String Description;
 
     public Movie() {
     }
@@ -38,5 +39,13 @@ public class Movie {
 
     public void setReviewStars(int reviewStars) {
         this.reviewStars = reviewStars;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String Description) {
+        this.Description = Description;
     }
 }

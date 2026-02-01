@@ -10,7 +10,7 @@ public class Movie {
     private String title;
     private int reviewStars;
     @Column(length = 500)
-    private String Description;
+    private String description;
 
     public Movie() {
     }
@@ -40,10 +40,10 @@ public class Movie {
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String Description) {
-        this.Description = Description;
+        this.description = Description;
     }
 }

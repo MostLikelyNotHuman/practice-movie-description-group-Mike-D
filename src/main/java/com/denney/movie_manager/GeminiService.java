@@ -10,6 +10,7 @@ public class GeminiService {
     private final Client client;
 
     public GeminiService(@Value("${GEMINI_API_KEY}") String apiKey) {
+        System.out.println("API Key Loaded: " + apiKey);
         this.client = Client.builder().apiKey(apiKey).build();
     }
 

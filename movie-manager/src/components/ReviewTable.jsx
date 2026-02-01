@@ -1,7 +1,4 @@
-const ReviewTable = () => {
-
-    
-
+const ReviewTable = ({reviews}) => {
 
     return <table>
         <caption>Your Reviews</caption>
@@ -13,7 +10,13 @@ const ReviewTable = () => {
             </tr>
         </thead>
         <tbody>
-
+            {reviews.map((movie, index) => (
+                <tr key={movie.id || index}>
+                    <td>{movie.title}</td>
+                    <td>{movie.reviewStars}</td>
+                    <td>{movie.description}</td>
+                </tr>
+            ))}
         </tbody>
     </table>
 }

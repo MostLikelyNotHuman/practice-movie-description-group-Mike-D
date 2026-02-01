@@ -1,9 +1,6 @@
 package com.denney.movie_manager.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Movie {
@@ -12,6 +9,7 @@ public class Movie {
     private int id;
     private String title;
     private int reviewStars;
+    @Column(length = 500)
     private String Description;
 
     public Movie() {
